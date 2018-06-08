@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="A web-app designed to help Natal Resucitation Care">
+    <meta name="author" content="The Quick Brown Fox Inc.">
+    <link rel="shortcut icon" href="favicon.png">
+      
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+
+    <title>NRP App</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap theme -->
+    <link href="css/bootstrap-theme.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+      
+      <style>
+      #timer {
+      font-size: 120px;
+          font-weight: bold;
+      }
+      </style>
+      
+      <script src="js/main.js"></script>
+      
+  </head>
+
+  <body role="document">
+
+<!-- Fixed navbar -->
+    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#" onClick="restartAll()">NRP Assistant</a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="#" onClick="pauseTimer()"><i class="fa fa-play"></i><i class="fa fa-pause"></i> Play/Pause Timer</a></li>
+            <li><a href="#" onClick="restartAll()"><i class="fa fa-refresh"></i> Restart</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="container theme-showcase" role="main">
+<br><br><br>
+      <div class="jumbotron">
+        <h1>NRP Assistant</h1>
+        <p id="nrplevel">Term Gestation, Breathing or Crying? Good tone?</p>
+<!--          <p id="nrplevel">This app is meant to help you with Post Natal Resucitation care.</p>-->
+          
+          <span id="timer" text=""></span>
+          <p id="message" text=""></p>
+          
+          <table width="100%">
+          <td></td></table>
+          
+          <br><br>
+          <table width="100%">
+        <td><a href="#" class="btn btn-primary btn-lg" role="button" onclick="yes()"><i class="fa fa-check-circle"></i> Yes</a></td>
+          <td><a href="#" class="btn btn-danger btn-lg" role="button" onclick="no()"><i class="fa fa-times-circle"></i> No</a></td>
+              </table>
+          
+          
+          
+      </div>
+    </div> <!-- /container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
